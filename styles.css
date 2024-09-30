@@ -12,8 +12,27 @@ body {
 }
 
 .header {
-    
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
     background-color: aqua;
+    grid-template-areas: 
+    "searchbar searchbar"
+    "user-info buttons"
+    ;
+    gap: 10px;
+}
+
+.searchbar {
+    grid-area: searchbar;
+}
+
+.user-info {
+    grid-area: user-info;
+}
+
+.buttons {
+    grid-area: buttons;
 }
 .main {
     display: grid;
@@ -27,7 +46,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
-    grid-area: 1/1/-1/2;
+    
 }
 
 .ann-trend {
