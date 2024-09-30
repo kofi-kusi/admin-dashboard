@@ -1,0 +1,42 @@
+body {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 150px 1fr;
+}
+
+.sidebar {
+    grid-area: 1/1/-1/2;
+    background-color: bisque;
+}
+
+.header {
+    
+    background-color: aqua;
+}
+.main {
+    display: grid;
+    background-color: aquamarine;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.project {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    grid-area: 1/1/-1/2;
+}
+
+.ann-trend {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.cards {
+    background-color: azure;
+    border-radius: 5px;
+}
