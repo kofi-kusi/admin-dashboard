@@ -9,6 +9,12 @@ body {
 .sidebar {
     grid-area: 1/1/-1/2;
     background-color: bisque;
+    padding: 20px;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 1fr;
+    font-weight: bold;
 }
 
 .header {
@@ -58,4 +64,21 @@ body {
 .cards {
     background-color: azure;
     border-radius: 5px;
+}
+
+/* sidebar styling */
+.brand {
+    font-size: larger;
+}
+
+.filter-white {
+    filter: invert(99%) sepia(0%) saturate(105%) hue-rotate(168deg) brightness(115%) contrast(100%);
+}
+
+ul > li {
+    list-style-type: none;
+}
+
+li:nth-child(7) {
+    margin-top: 30px;
 }
