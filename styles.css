@@ -17,6 +17,8 @@ body {
 .header {
     grid-column: 2 / 5;
     background-color: aqua;
+    grid-row: 1 / 2;
+    padding: 1rem 1.5rem;
 }
 
 .sidebar {
@@ -34,6 +36,11 @@ body {
 
 a {
     text-decoration: none;
+}
+
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+    color: currentColor;
 }
 
 /* header layout */
@@ -67,11 +74,6 @@ img[src$="dashboard.svg"] {
     gap: 1em;
 }
 
-a:not([class]) {
-    text-decoration-skip-ink: auto;
-    color: currentColor;
-}
-
 .sidebar ul {
     list-style: none;
     padding: 0;
@@ -92,3 +94,41 @@ a:not([class]) {
     margin: 10px;
 }
 
+/* header styles */
+/* header upper panel */
+.sidebar-search-bar {
+    display: grid;
+    align-items: center;
+}
+.header-search-bar > form {
+    width: 80%;
+    height: 70%;
+    display: flex;
+    flex-direction: row;
+    border-radius: 8px;
+    align-items: center;
+    border-radius: 30px;
+    background-color: azure;
+}
+
+form input {
+    all: unset;
+    height: 100%;
+    width: 100%;
+    padding: 6px 10px;
+
+}
+
+/* header notifications */
+.header-notifications ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    align-items: center;
+    gap: 1rem;
+}
+
+.avatar-s {
+    height: 50px;
+    width: 50px;
+}
