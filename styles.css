@@ -132,3 +132,39 @@ form input {
     height: 50px;
     width: 50px;
 }
+
+/* header action panel styles */
+/* header greeting */
+
+.header-greeting {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1rem;
+    align-items: center;
+}
+
+.avatar-b {
+    height: 70px;
+    width: 70px;
+}
+
+.header-greeting-user {
+    font-size: larger;
+    font-weight: 600;
+}
+
+/* head actions */
+.header-actions {
+    display: grid;
+    grid-template-columns: repeat(3,  auto);
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: center;
+}
+
+.header-actions button {
+    width: 80px;
+    height: 40px;
+    border-radius: 10px;
+}
+
