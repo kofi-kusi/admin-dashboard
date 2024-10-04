@@ -273,3 +273,9 @@ form input {
 .trending-project {
     font-size: small;
 }
+
+.side-trending-avatar, .side-trending-body {
+    display: grid;
+    align-items: center;
+}
+
