@@ -1,10 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
 * {
     box-sizing: border-box;
+    font-family: Quicksand;
 }
 
 body {
     height: 100vh;
     width: 100%;
+    
 }
 
 .container {
@@ -168,3 +172,48 @@ form input {
     border-radius: 10px;
 }
 
+/* content styles */
+.content {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 1rem;
+    padding: 1rem 1.5rem;
+}
+
+.content-project-title {
+    margin: 10px;
+}
+
+.content-project-card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.card {
+    border-radius: 10px;
+}
+
+.content-project-card{
+    padding: 20px;
+    border-left: 4px solid orange;
+}
+
+.star-icon {
+    content: url(./assets/icons/star-plus-outline.svg);
+}
+
+.eye-icon {
+    content: url(./assets/icons/eye-plus-outline.svg);
+}
+
+.share-icon {
+    content: url(./assets/icons/share-variant.svg);
+}
+
+.card-icons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: 20px;
+}
